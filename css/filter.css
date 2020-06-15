@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+}
+/* nav links */
+.navbar-toggler {
+  outline: none !important;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainPink);
+}
+.nav-link {
+  color: var(--mainPink);
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+/* end of nav links */
+/* info icons */
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainPink);
+  border-color: var(--mainPink);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+/* end of info icons */
+/* banner */
+.max-height {
+  min-height: calc(95vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+    url(../images/headerBcg.jpeg) center/cover fixed no-repeat;
+  position: relative;
+}
+
+.banner {
+  color: var(--mainWhite);
+  margin-top: 15rem;
+}
+.banner-title {
+  color: var(--mainPink);
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainPink);
+}
+/* end of banner */
+/* About-us */
+.btn-black {
+  border-color: var(--mainBlack);
+  color: var(--mainBlack);
+}
+.btn-black:hover {
+  background-color: var(--mainBlack);
+  color: var(--mainPink);
+}
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/* End of About us */
+/* Store */
+.store {
+  background-color: var(--mainGrey);
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.store-img {
+  transition: all 1s ease-in-out;
+}
+
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: var(--mainYellow);
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+
+.store-item-icon:hover {
+  color: var(--mainWhite);
+}
+.store-item-value {
+  color: var(--mainBlack);
+}
+.search-box {
+  background-color: var(--mainPink);
+  color: var(--mainBlack);
+}
